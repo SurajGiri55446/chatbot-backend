@@ -1,6 +1,7 @@
 package com.ai.gemini_chat;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,5 +25,9 @@ public class AIController {
         String question = payload.get("question");
         String answer = qnAService.getAnswer(question);
         return ResponseEntity.ok(answer);
+    }
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to the Chatbot API!";
     }
 }
