@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
-@CrossOrigin(origins = "https://chatbot-suraj-g.vercel.app")
+@CrossOrigin(origins = "https://chatbot-backend-seven-tau.vercel.app")
 @RestController
 @RequestMapping("/api/qna")
 public class AIController {
