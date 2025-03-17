@@ -10,8 +10,8 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-        .allowedOrigins("http://localhost:5173","https://chatbot-eight-coral-55.vercel.app/")
-                .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
+                .allowedOrigins("https://chatbot-suraj-g.vercel.app") // Only allow frontend
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     }
