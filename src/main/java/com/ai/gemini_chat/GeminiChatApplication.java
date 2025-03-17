@@ -8,6 +8,7 @@ public class GeminiChatApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GeminiChatApplication.class, args);
+		System.out.println("HELLO");
 	}
 
 }
