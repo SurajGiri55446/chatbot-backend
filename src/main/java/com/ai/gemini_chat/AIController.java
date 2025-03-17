@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"https://chatbot-backend-seven-tau.vercel.app", "*"})
 
 @RestController
 @RequestMapping("/api/qna")
@@ -29,7 +29,7 @@ public class AIController {
         String answer = qnAService.getAnswer(question);
         return ResponseEntity.ok(answer);
     }
-    @GetMapping("/test")
+    @GetMapping("/")
     public String home() {
         return "Welcome to the Chatbot API!";
     }
